@@ -76,6 +76,36 @@ class SearchField extends React.Component {
   }
 }
 
+class Pagination extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { value: '' };
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.handleSubmit(this.state.value);
+  }
+
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit.bind(this)}>
+        <label>
+          Pagination Parameters:
+          <input type="number" value={this.state.value} onChange={this.handleChange.bind(this)} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    )
+  }
+}
+
 class App extends React.Component {
 
   constructor(props) {
@@ -83,21 +113,32 @@ class App extends React.Component {
 
     this.state = {
       books: [],
-      value: ''
+      query: {
+        text:'', 
+        page: ''
+      }
     };
   }
 
-  handleSubmit(text) {
-    console.log('tesasdf', text);
+  handleSubmitText(text) {
     this.updateBooks({
+      ...this.state.query,
       text
+    });
+  }
+
+  handleSubmitPage(page) {
+    this.updateBooks({
+      ...this.state.query,
+      page
     });
   }
 
   async updateBooks(query) {
     const books = await getBooks(query);
     this.setState({
-      books
+      books,
+      query
     });
   }
 
@@ -110,7 +151,8 @@ class App extends React.Component {
    // const query = { text: "ch" };
     return (
       <div>
-        <SearchField handleSubmit={this.handleSubmit.bind(this)}/>
+        <SearchField handleSubmit={this.handleSubmitText.bind(this)}/>
+        <Pagination handleSubmit={this.handleSubmitPage.bind(this)}/>
         <BookTable books={this.state.books} />
       </div>
     )
