@@ -10,7 +10,14 @@ async function endpointPromise() {
         superagentRequest.query({ key, q: 'ab', search: 'all', page: '1' })
         .then(res => {
                 XMLparser(res.text, function (err, result) {
-                    resolve(JSON.stringify(result));
+                    // const firstTile = result.GoodreadsResponse.search[0].results[0].work[0].best_book[0].title[0];
+                    const books = result.GoodreadsResponse.search[0].results[0].work.map(work => {
+                        return {
+                            title: work.best_book[0].title[0],
+                            author: work.best_book[0].author[0].name[0]
+                        }
+                    });
+                    resolve(JSON.stringify(books));
                 });
             })   
             .catch(err => {

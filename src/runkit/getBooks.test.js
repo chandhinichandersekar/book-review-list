@@ -9,24 +9,18 @@ describe('when the getBooks endpoint is called', () => {
             }; 
             
             await endpoint(jest.fn, mockResponse);
-            const response = mockResponse.end.mock.calls[0][0]
-            expect(JSON.parse(response)).toMatchObject({
-                "GoodreadsResponse": {
-                    "Request": [
-                      {
-                        "authentication": [
-                          "true"
-                        ],
-                        "key": [
-                          "RDfV4oPehM6jNhxfNQzzQ"
-                        ],
-                        "method": [
-                          "search_index"
-                        ]
-                      }
-                    ]
-                }
+            const books = mockResponse.end.mock.calls[0][0];
+            const jsonBooks = JSON.parse(books);
+            const [ firstBook, secondBook ] = jsonBooks;
+            expect(firstBook).toMatchObject({
+                title:  "ANIMAL FARM (AB)",
+                author: "George Orwell",   
             });
+            expect(secondBook).toMatchObject({
+                title:  "Ardil-22 (Catch-22, # 1)",
+                author: "Joseph Heller"
+            });
+            expect(jsonBooks.length).toBe(20);
         })
     })
 });

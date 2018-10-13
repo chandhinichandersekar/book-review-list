@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when BookRowsStateless is rendered with shallow before component has mounted should match the snapshot 1`] = `
+Array [
+  <tr>
+    <td>
+      ANIMAL FARM (AB)
+    </td>
+    <td>
+      George Orwell
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Ardil-22 (Catch-22, # 1)
+    </td>
+    <td>
+      Joseph Heller
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      A Tale of Two Cities
+    </td>
+    <td>
+      Charles Dickens
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Fields of Elysium (Fields of Elysium, #1)
+    </td>
+    <td>
+      A.B. Whelan
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      14 Days to Die
+    </td>
+    <td>
+      A.B. Whelan
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten
+    </td>
+    <td>
+      Kazuo Ishiguro
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      A Leste do Éden (Vol I e II)
+    </td>
+    <td>
+      John Steinbeck
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Atlas wirft die Welt ab
+    </td>
+    <td>
+      Ayn Rand
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      The Way West (The Big Sky, #2)
+    </td>
+    <td>
+      A.B. Guthrie Jr.
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Hart van Inkt (Inkt, #1)
+    </td>
+    <td>
+      Cornelia Funke
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      The Big Sky (The Big Sky, #1)
+    </td>
+    <td>
+      A.B. Guthrie Jr.
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      As Sick as Our Secrets
+    </td>
+    <td>
+      A.B. Whelan
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      AB de Villiers - The Autobiography
+    </td>
+    <td>
+      A.B. de Villiers
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Oliver Twist ( Ab 11 J.).
+    </td>
+    <td>
+      Charles Dickens
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Don Quixote [illustrated]
+    </td>
+    <td>
+      Miguel de Cervantes Saavedra
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Insel der blauen Delfine. CD. ( Ab 8 J.)
+    </td>
+    <td>
+      Scott O'Dell
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      A Streetcar Named Desire. Ab 11. Schuljahr
+    </td>
+    <td>
+      Tennessee Williams
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      A mulher de Jerusalém
+    </td>
+    <td>
+      A.B. Yehoshua
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      The Lover
+    </td>
+    <td>
+      A.B. Yehoshua
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      O misterioso caso de Styles
+    </td>
+    <td>
+      Agatha Christie
+    </td>
+  </tr>,
+]
+`;
+
+exports[`when app is rendered with shallow should match the snapshot 1`] = `
+<table>
+  <tr>
+    <th>
+      Title
+    </th>
+    <th>
+      Author
+    </th>
+  </tr>
+  <BookRows />
+</table>
+`;
+
+exports[`when bookrows is rendered with shallow before component has mounted should match the snapshot 1`] = `""`;
