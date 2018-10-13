@@ -219,6 +219,44 @@ Array [
 ]
 `;
 
+exports[`when Pagination is rendered with shallow should match the snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Pagination Parameters:
+    <input
+      onChange={[Function]}
+      type="number"
+      value=""
+    />
+  </label>
+  <input
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`when Pagination is rendered with shallow when input is changed should update the input value 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Pagination Parameters:
+    <input
+      onChange={[Function]}
+      type="number"
+      value="1"
+    />
+  </label>
+  <input
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;
+
 exports[`when SearchField is rendered with shallow should match the snapshot 1`] = `
 <form
   onSubmit={[Function]}

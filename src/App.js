@@ -59,7 +59,6 @@ export class SearchField extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('this.state.value)', this.state.value);
     this.props.handleSubmit(this.state.value);
   }
 
@@ -76,7 +75,7 @@ export class SearchField extends React.Component {
   }
 }
 
-class Pagination extends React.Component {
+export class Pagination extends React.Component {
 
   constructor(props) {
     super(props);

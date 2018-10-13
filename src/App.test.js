@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App, { BookRows, SearchField } from './App';
+import App, { BookRows, SearchField, Pagination } from './App';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
@@ -65,3 +65,34 @@ describe('when SearchField is rendered with shallow', () => {
   });
 });
 
+
+describe('when Pagination is rendered with shallow', () => {
+  const mockHandleSubmit = jest.fn();
+  const wrapper = shallow(
+    <Pagination handleSubmit={mockHandleSubmit} />
+  );
+  it('should match the snapshot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+  describe('when input is changed', () => {
+    it('should update the input value', () => {
+      wrapper.find('input').first().simulate('change', {
+        target: {
+          value: '1'
+        }
+      });
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+  });
+  describe('when submitted', () => {
+    it('should update the input value', () => {
+      wrapper.instance().handleSubmit({
+        preventDefault: jest.fn()
+      });
+      const mockCall = mockHandleSubmit.mock.calls[0];
+      expect(mockCall).toMatchObject([
+        '1'
+      ]);
+    });
+  });
+});
