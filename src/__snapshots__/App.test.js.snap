@@ -269,7 +269,7 @@ exports[`when SearchField is rendered with shallow should match the snapshot 1`]
       value=""
     />
   </label>
-  <button
+  <input
     type="submit"
     value="Submit"
   />
@@ -288,7 +288,7 @@ exports[`when SearchField is rendered with shallow when input is changed should 
       value="typedSearch"
     />
   </label>
-  <button
+  <input
     type="submit"
     value="Submit"
   />

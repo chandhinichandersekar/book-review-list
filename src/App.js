@@ -69,7 +69,7 @@ export class SearchField extends React.Component {
           Search Parameters:
           <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} />
         </label>
-        <button type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
       </form>
     )
   }
