@@ -1,0 +1,2045 @@
+{
+    "GoodreadsResponse": {
+      "Request": [
+        {
+          "authentication": [
+            "true"
+          ],
+          "key": [
+            "RDfV4oPehM6jNhxfNQzzQ"
+          ],
+          "method": [
+            "search_index"
+          ]
+        }
+      ],
+      "search": [
+        {
+          "query": [
+            "ab"
+          ],
+          "results-start": [
+            "1"
+          ],
+          "results-end": [
+            "20"
+          ],
+          "total-results": [
+            "12711"
+          ],
+          "source": [
+            "Goodreads"
+          ],
+          "query-time-seconds": [
+            "0.19"
+          ],
+          "results": [
+            {
+              "work": [
+                {
+                  "id": [
+                    {
+                      "_": "2207778",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "518",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "2237637",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "42244",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1945",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "8",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.90"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "35677375",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "ANIMAL FARM (AB)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "3706",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "George Orwell"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "814330",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "290",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "639660",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "15276",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1961",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.98"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "17201924",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Ardil-22 (Catch-22, # 1)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "3167",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Joseph Heller"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1357066710m/17201924.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1357066710s/17201924.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "2956372",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "2425",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "725700",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "14603",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1859",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "11",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.82"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "1953",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "A Tale of Two Cities"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "239579",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Charles Dickens"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1344922523m/1953.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1344922523s/1953.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "21959700",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "6",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "339",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "156",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2012",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "12",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "_": "12",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.79"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "16133112",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Fields of Elysium (Fields of Elysium, #1)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "6573508",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Whelan"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1352216601m/16133112.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1352216601s/16133112.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "46261344",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "4",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "839",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "190",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2016",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "1",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "_": "13",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.51"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "26262230",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "14 Days to Die"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "6573508",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Whelan"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1441854374m/26262230.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1441854374s/26262230.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "1499998",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "201",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "377820",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "25900",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2005",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "3",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.81"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "31242940",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "4280",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Kazuo Ishiguro"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "2574991",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "257",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "367731",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "16158",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1952",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "9",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "4.36"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "27878299",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "A Leste do Ã‰den (Vol I e II)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "585",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "John Steinbeck"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1448218742m/27878299.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1448218742s/27878299.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "817219",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "162",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "321078",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "15704",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1957",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.68"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "6945847",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Atlas wirft die Welt ab"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "432",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Ayn Rand"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1450028448m/6945847.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1450028448s/6945847.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "915042",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "26",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "4660",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "210",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1949",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.94"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "202033",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "The Way West (The Big Sky, #2)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "117797",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Guthrie Jr."
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "2628323",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "7",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "319973",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "10991",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2003",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "9",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "_": "23",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.87"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "7556418",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Hart van Inkt (Inkt, #1)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "15873",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Cornelia Funke"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1273567868m/7556418.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1273567868s/7556418.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "1461085",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "7",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "3581",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "324",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1947",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "4.04"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "202035",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "The Big Sky (The Big Sky, #1)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "117797",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Guthrie Jr."
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "59390956",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "4",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "513",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "102",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2018",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "2",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "_": "14",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "4.04"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "39929437",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "As Sick as Our Secrets"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "6573508",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Whelan"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1524519083m/39929437.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1524519083s/39929437.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "52541175",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "7",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "689",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "53",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2016",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "4.00"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "31869989",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "AB de Villiers - The Autobiography"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "15737385",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. de Villiers"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "3057979",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "2167",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "277795",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "6030",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1838",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.85"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "2064191",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Oliver Twist ( Ab 11 J.)."
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "239579",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Charles Dickens"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "121842",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "2076",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "174181",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "6220",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1605",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "1",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "_": "16",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.86"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "20964372",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Don Quixote [illustrated]"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "4037220",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Miguel de Cervantes Saavedra"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "3215136",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "134",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "259973",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "7340",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1960",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.81"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "124228",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "Insel der blauen Delfine. CD. ( Ab 8 J.)"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "4999",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Scott O'Dell"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png"
+                      ],
+                      "small_image_url": [
+                        "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "142449",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "116",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "238688",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "3371",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1947",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.98"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "2002486",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "A Streetcar Named Desire. Ab 11. Schuljahr"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "7751",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Tennessee Williams"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1432220791m/2002486.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1432220791s/2002486.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "803815",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "30",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "1115",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "173",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "2004",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.42"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "35070484",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "A mulher de JerusalÃ©m"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "6434062",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Yehoshua"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1494011158m/35070484.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1494011158s/35070484.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "1319021",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "28",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "1168",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "84",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1977",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.99"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "65251",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "The Lover"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "6434062",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "A.B. Yehoshua"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1369870875m/65251.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1369870875s/65251.jpg"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": [
+                    {
+                      "_": "3366260",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "books_count": [
+                    {
+                      "_": "1351",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "ratings_count": [
+                    {
+                      "_": "187923",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "text_reviews_count": [
+                    {
+                      "_": "5125",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_year": [
+                    {
+                      "_": "1920",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_month": [
+                    {
+                      "_": "10",
+                      "$": {
+                        "type": "integer"
+                      }
+                    }
+                  ],
+                  "original_publication_day": [
+                    {
+                      "$": {
+                        "type": "integer",
+                        "nil": "true"
+                      }
+                    }
+                  ],
+                  "average_rating": [
+                    "3.98"
+                  ],
+                  "best_book": [
+                    {
+                      "$": {
+                        "type": "Book"
+                      },
+                      "id": [
+                        {
+                          "_": "20883182",
+                          "$": {
+                            "type": "integer"
+                          }
+                        }
+                      ],
+                      "title": [
+                        "O misterioso caso de Styles"
+                      ],
+                      "author": [
+                        {
+                          "id": [
+                            {
+                              "_": "123715",
+                              "$": {
+                                "type": "integer"
+                              }
+                            }
+                          ],
+                          "name": [
+                            "Agatha Christie"
+                          ]
+                        }
+                      ],
+                      "image_url": [
+                        "https://images.gr-assets.com/books/1393030440m/20883182.jpg"
+                      ],
+                      "small_image_url": [
+                        "https://images.gr-assets.com/books/1393030440s/20883182.jpg"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
