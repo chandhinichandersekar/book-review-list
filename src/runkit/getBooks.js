@@ -5,10 +5,12 @@ const key = process.env.GOODREADS_KEY;
 
 async function endpointPromise(query) {
     return new Promise(resolve => {
+        const {text, page} = query;
+        const pageOrDefault = page ? page : '1';
         const superagentRequest = superagent.get('https://www.goodreads.com/search/index.xml');
         superagentRequest.buffer();
         superagentRequest.type('xml');
-        superagentRequest.query({ key, q: query.text, search: 'all', page: '1' })
+        superagentRequest.query({ key, q: text, search: 'all', page })
         .then(res => {
                 XMLparser(res.text, function (err, result) {
                     // const firstTile = result.GoodreadsResponse.search[0].results[0].work[0].best_book[0].title[0];

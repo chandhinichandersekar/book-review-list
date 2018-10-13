@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when the getBooks endpoint is called with a valid request of no page should respond back with all the books 1`] = `
+Array [
+  Object {
+    "author": "J.R.R. Tolkien",
+    "title": "Khobbit: Anglijskij yazyk s Dzhonom R.R. Tolkienom V 2 ch. Ch. 1 (Metod chteniya Il'i Franka)",
+  },
+  Object {
+    "author": "Charlotte Brontë",
+    "title": "Jane Eyre (Ch)",
+  },
+  Object {
+    "author": "Antoine de Saint-Exupéry",
+    "title": "Der Chly Prinz",
+  },
+  Object {
+    "author": "Homer",
+    "title": "The Odyssey",
+  },
+  Object {
+    "author": "Dale Carnegie",
+    "title": "How To Win Friends And Influence People (Kn.D / Cht.Na Angl.Yaz., Neadapt.) / Kak Zavoevat Druzey I Okazyvat Vliyanie Na Lyudey. How To Win Friends And Influence People. (Kd Ch, Angl.Yaz.,Neadaptir.)",
+  },
+  Object {
+    "author": "William Shakespeare",
+    "title": "Macbeth",
+  },
+  Object {
+    "author": "Herman Melville",
+    "title": "MOBY DICK, or the White Whale [Special Illustrated Edition] [Annotated with Criticisms and Interpretations ] [Free Audio Links]",
+  },
+  Object {
+    "author": "Jane Austen",
+    "title": "Persuasion (Ch)",
+  },
+  Object {
+    "author": "Mark Manson",
+    "title": "Nghệ thuật tinh tế của việc đ*ch thèm quan tâm",
+  },
+  Object {
+    "author": "C.H. Dalton",
+    "title": "A Practical Guide to Racism",
+  },
+  Object {
+    "author": "Oscar Wilde",
+    "title": "De ernst van Ernst : een triviaal blijspel voor ernstige menschen",
+  },
+  Object {
+    "author": "Dante Alighieri",
+    "title": "The Divine Comedy",
+  },
+  Object {
+    "author": "Lao Tzu",
+    "title": "Tao Teh Ching",
+  },
+  Object {
+    "author": "Sophocles",
+    "title": "Œdipe-Roi",
+  },
+  Object {
+    "author": "Virgil",
+    "title": "The Aeneid",
+  },
+  Object {
+    "author": "John Bunyan",
+    "title": "Bunyan's Pilgrim's Progress. Illustr. by C.H. Bennett",
+  },
+  Object {
+    "author": "Harrison Davies",
+    "title": "S.E.A.R.Ch",
+  },
+  Object {
+    "author": "C.H. Armstrong",
+    "title": "The Edge of Nowhere",
+  },
+  Object {
+    "author": "Johann David Wyss",
+    "title": "Le Robinson Suisse",
+  },
+  Object {
+    "author": "C.H. Admirand",
+    "title": "Tyler (The Secret Life of Cowboys, #1)",
+  },
+]
+`;
+
+exports[`when the getBooks endpoint is called with a valid request of page 2 should respond back with all the books 1`] = `
+Array [
+  Object {
+    "author": "C.H. Admirand",
+    "title": "A Wedding in Apple Grove (Small Town USA, #1)",
+  },
+  Object {
+    "author": "Fyodor Dostoyevsky",
+    "title": "L'Esprit Souterrain",
+  },
+  Object {
+    "author": "C.H. MacLean",
+    "title": "One is Come (Five in Circle, #1)",
+  },
+  Object {
+    "author": "Thomas Hardy",
+    "title": "Jude the Obscure",
+  },
+  Object {
+    "author": "Anne Brontë",
+    "title": "Agnès Grey (Annoté)",
+  },
+  Object {
+    "author": "C.H. Lawler",
+    "title": "The Saints of Lost Things",
+  },
+  Object {
+    "author": "Charles Baudelaire",
+    "title": "Les fleurs du mal. Avec une étude sur la vie et les oeuvres de Baudelaire par Camille Vergniol. Illus. de Tony George-Roux, gravées par Ch. Clément ",
+  },
+  Object {
+    "author": "C.H. Charles",
+    "title": "Love Letters of Great Men and Women: From the Eighteenth Century to the Present Day",
+  },
+  Object {
+    "author": "Charlotte Brontë",
+    "title": "Shirley",
+  },
+  Object {
+    "author": "C.H. Admirand",
+    "title": "One Day in Apple Grove (Small Town USA, #2)",
+  },
+  Object {
+    "author": "Unknown",
+    "title": "Sir Gawain and the Green Knight",
+  },
+  Object {
+    "author": "Johann Wolfgang von Goethe",
+    "title": "Faust, a Tragedy, Tr. by Capt. [c.H.] Knox",
+  },
+  Object {
+    "author": "Rudyard Kipling",
+    "title": "Kim",
+  },
+  Object {
+    "author": "Henry Fielding",
+    "title": "The History of Tom Jones, a Foundling",
+  },
+  Object {
+    "author": "C.H. Admirand",
+    "title": "Jesse  (The Secret Life of Cowboys, #3)",
+  },
+  Object {
+    "author": "Aeschylus",
+    "title": "Oresteia: Me To Archaio Keimeno",
+  },
+  Object {
+    "author": "C.H. Admirand",
+    "title": "Dylan  (The Secret Life of Cowboys, #2)",
+  },
+  Object {
+    "author": "Swaroop C.H.",
+    "title": "A Byte of Python",
+  },
+  Object {
+    "author": "Lin C.H.",
+    "title": "Stories from the Air",
+  },
+  Object {
+    "author": "C.H. Admirand",
+    "title": "Welcome Back to Apple Grove (Small Town USA #3)",
+  },
+]
+`;
