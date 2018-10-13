@@ -34,5 +34,10 @@ exports.endpoint = async function(request, response) {
     const parsedUrl = parseQuery(request.url, true);
     console.log("query", parsedUrl.query);
     const responseFromPromise = await endpointPromise(parsedUrl.query);
+    response.writeHead(200, {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': '*',
+    });
     response.end(responseFromPromise)
 }

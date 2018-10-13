@@ -1,8 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`when BookRowsStateless is rendered with shallow before component has mounted should match the snapshot 1`] = `
+exports[`when app is rendered with shallow should match the snapshot 1`] = `
+<div>
+  <SearchField
+    handleSubmit={[Function]}
+  />
+  <BookTable
+    books={Array []}
+  />
+</div>
+`;
+
+exports[`when bookrows is rendered with shallow before component has mounted should match the snapshot 1`] = `
 Array [
-  <tr>
+  <tr
+    key="ANIMAL FARM (AB)"
+  >
     <td>
       ANIMAL FARM (AB)
     </td>
@@ -10,7 +23,9 @@ Array [
       George Orwell
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Ardil-22 (Catch-22, # 1)"
+  >
     <td>
       Ardil-22 (Catch-22, # 1)
     </td>
@@ -18,7 +33,9 @@ Array [
       Joseph Heller
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="A Tale of Two Cities"
+  >
     <td>
       A Tale of Two Cities
     </td>
@@ -26,7 +43,9 @@ Array [
       Charles Dickens
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Fields of Elysium (Fields of Elysium, #1)"
+  >
     <td>
       Fields of Elysium (Fields of Elysium, #1)
     </td>
@@ -34,7 +53,9 @@ Array [
       A.B. Whelan
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="14 Days to Die"
+  >
     <td>
       14 Days to Die
     </td>
@@ -42,7 +63,9 @@ Array [
       A.B. Whelan
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten"
+  >
     <td>
       Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten
     </td>
@@ -50,7 +73,9 @@ Array [
       Kazuo Ishiguro
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="A Leste do Éden (Vol I e II)"
+  >
     <td>
       A Leste do Éden (Vol I e II)
     </td>
@@ -58,7 +83,9 @@ Array [
       John Steinbeck
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Atlas wirft die Welt ab"
+  >
     <td>
       Atlas wirft die Welt ab
     </td>
@@ -66,7 +93,9 @@ Array [
       Ayn Rand
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="The Way West (The Big Sky, #2)"
+  >
     <td>
       The Way West (The Big Sky, #2)
     </td>
@@ -74,7 +103,9 @@ Array [
       A.B. Guthrie Jr.
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Hart van Inkt (Inkt, #1)"
+  >
     <td>
       Hart van Inkt (Inkt, #1)
     </td>
@@ -82,7 +113,9 @@ Array [
       Cornelia Funke
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="The Big Sky (The Big Sky, #1)"
+  >
     <td>
       The Big Sky (The Big Sky, #1)
     </td>
@@ -90,7 +123,9 @@ Array [
       A.B. Guthrie Jr.
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="As Sick as Our Secrets"
+  >
     <td>
       As Sick as Our Secrets
     </td>
@@ -98,7 +133,9 @@ Array [
       A.B. Whelan
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="AB de Villiers - The Autobiography"
+  >
     <td>
       AB de Villiers - The Autobiography
     </td>
@@ -106,7 +143,9 @@ Array [
       A.B. de Villiers
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Oliver Twist ( Ab 11 J.)."
+  >
     <td>
       Oliver Twist ( Ab 11 J.).
     </td>
@@ -114,7 +153,9 @@ Array [
       Charles Dickens
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Don Quixote [illustrated]"
+  >
     <td>
       Don Quixote [illustrated]
     </td>
@@ -122,7 +163,9 @@ Array [
       Miguel de Cervantes Saavedra
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="Insel der blauen Delfine. CD. ( Ab 8 J.)"
+  >
     <td>
       Insel der blauen Delfine. CD. ( Ab 8 J.)
     </td>
@@ -130,7 +173,9 @@ Array [
       Scott O'Dell
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="A Streetcar Named Desire. Ab 11. Schuljahr"
+  >
     <td>
       A Streetcar Named Desire. Ab 11. Schuljahr
     </td>
@@ -138,7 +183,9 @@ Array [
       Tennessee Williams
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="A mulher de Jerusalém"
+  >
     <td>
       A mulher de Jerusalém
     </td>
@@ -146,7 +193,9 @@ Array [
       A.B. Yehoshua
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="The Lover"
+  >
     <td>
       The Lover
     </td>
@@ -154,7 +203,9 @@ Array [
       A.B. Yehoshua
     </td>
   </tr>,
-  <tr>
+  <tr
+    key="O misterioso caso de Styles"
+  >
     <td>
       O misterioso caso de Styles
     </td>
@@ -164,18 +215,3 @@ Array [
   </tr>,
 ]
 `;
-
-exports[`when app is rendered with shallow should match the snapshot 1`] = `
-<div>
-  <SearchField />
-  <BookTable
-    query={
-      Object {
-        "text": "ch",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`when bookrows is rendered with shallow before component has mounted should match the snapshot 1`] = `""`;
