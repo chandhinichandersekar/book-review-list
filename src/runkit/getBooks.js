@@ -1,13 +1,14 @@
 const superagent = require('superagent');
+const parseQuery = require('url').parse;
 const XMLparser = require('xml2js').parseString;
 const key = process.env.GOODREADS_KEY; 
 
-async function endpointPromise() {
+async function endpointPromise(query) {
     return new Promise(resolve => {
         const superagentRequest = superagent.get('https://www.goodreads.com/search/index.xml');
         superagentRequest.buffer();
         superagentRequest.type('xml');
-        superagentRequest.query({ key, q: 'ab', search: 'all', page: '1' })
+        superagentRequest.query({ key, q: query.text, search: 'all', page: '1' })
         .then(res => {
                 XMLparser(res.text, function (err, result) {
                     // const firstTile = result.GoodreadsResponse.search[0].results[0].work[0].best_book[0].title[0];
@@ -30,6 +31,8 @@ exports.endpointPromise = endpointPromise;
 
 
 exports.endpoint = async function(request, response) {
-    const responseFromPromise = await endpointPromise();
+    const parsedUrl = parseQuery(request.url, true);
+    console.log("query", parsedUrl.query);
+    const responseFromPromise = await endpointPromise(parsedUrl.query);
     response.end(responseFromPromise)
 }

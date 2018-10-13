@@ -166,17 +166,16 @@ Array [
 `;
 
 exports[`when app is rendered with shallow should match the snapshot 1`] = `
-<table>
-  <tr>
-    <th>
-      Title
-    </th>
-    <th>
-      Author
-    </th>
-  </tr>
-  <BookRows />
-</table>
+<div>
+  <SearchField />
+  <BookTable
+    query={
+      Object {
+        "text": "ch",
+      }
+    }
+  />
+</div>
 `;
 
 exports[`when bookrows is rendered with shallow before component has mounted should match the snapshot 1`] = `""`;

@@ -3,19 +3,15 @@ import './App.css';
 const superagent = require('superagent');
 
 
-async function getBooks() {
+async function getBooks(query) {
   return new Promise(resolve => {
-    superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/').then(res => {
+    superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/').query({...query}).then(res => {
       resolve(res.body);
     })
   });
 }
 
 export class BookRowsStateless extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const bookRows = this.props.books.map(book => {
@@ -41,7 +37,7 @@ export class BookRows extends React.Component {
   }
 
   async componentDidMount() {
-      const books = await getBooks();
+      const books = await getBooks(this.props.query);
       this.setState({
         books
       });
@@ -67,10 +63,50 @@ class BookTable extends React.Component {
           <th>Title</th>
           <th>Author</th>
         </tr>
-        <BookRows />
+        <BookRows query = {this.props.query} />
       </table>
     )
   }
 }
 
-export default BookTable;
+function App() {
+  const query = {text:"ch"};
+  return (
+  <div>
+    <SearchField />
+    <BookTable query = {query} />
+    </div>
+    )
+}
+
+class SearchField extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+  }
+
+  handleChange (event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit.bind(this)}>
+       <label>
+          Search Parameters:
+          <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)}/>
+        </label>
+        <input type="submit" value="Submit" />
+      </form> 
+    )
+  }
+}
+
+export default App;
+

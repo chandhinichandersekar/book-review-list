@@ -8,17 +8,17 @@ describe('when the getBooks endpoint is called', () => {
                 end: jest.fn()
             }; 
             
-            await endpoint(jest.fn, mockResponse);
+            await endpoint({url: "https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/?text=ch"}, mockResponse);
             const books = mockResponse.end.mock.calls[0][0];
             const jsonBooks = JSON.parse(books);
             const [ firstBook, secondBook ] = jsonBooks;
             expect(firstBook).toMatchObject({
-                title:  "ANIMAL FARM (AB)",
-                author: "George Orwell",   
+                title:  "Khobbit: Anglijskij yazyk s Dzhonom R.R. Tolkienom V 2 ch. Ch. 1 (Metod chteniya Il'i Franka)",
+                author: "J.R.R. Tolkien",   
             });
             expect(secondBook).toMatchObject({
-                title:  "Ardil-22 (Catch-22, # 1)",
-                author: "Joseph Heller"
+                title:  "Jane Eyre (Ch)",
+                author: "Charlotte Brontë"
             });
             expect(jsonBooks.length).toBe(20);
         })
