@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`when app is rendered with shallow should match the snapshot 1`] = `
+exports[`when App is rendered with shallow should match the snapshot 1`] = `
 <div>
   <SearchField
+    handleSubmit={[Function]}
+  />
+  <Pagination
     handleSubmit={[Function]}
   />
   <BookTable
@@ -11,7 +14,7 @@ exports[`when app is rendered with shallow should match the snapshot 1`] = `
 </div>
 `;
 
-exports[`when bookrows is rendered with shallow before component has mounted should match the snapshot 1`] = `
+exports[`when BookRows is rendered with shallow before component has mounted should match the snapshot 1`] = `
 Array [
   <tr
     key="ANIMAL FARM (AB)"
@@ -214,4 +217,42 @@ Array [
     </td>
   </tr>,
 ]
+`;
+
+exports[`when SearchField is rendered with shallow should match the snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Search Parameters:
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </label>
+  <button
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;
+
+exports[`when SearchField is rendered with shallow when input is changed should update the input value 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label>
+    Search Parameters:
+    <input
+      onChange={[Function]}
+      type="text"
+      value="typedSearch"
+    />
+  </label>
+  <button
+    type="submit"
+    value="Submit"
+  />
+</form>
 `;

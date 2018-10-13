@@ -46,7 +46,7 @@ class BookTable extends React.Component {
   }
 }
 
-class SearchField extends React.Component {
+export class SearchField extends React.Component {
 
   constructor(props) {
     super(props);
@@ -70,7 +70,7 @@ class SearchField extends React.Component {
           Search Parameters:
           <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} />
         </label>
-        <input type="submit" value="Submit" />
+        <button type="submit" value="Submit" />
       </form>
     )
   }
