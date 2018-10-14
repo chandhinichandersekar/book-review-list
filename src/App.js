@@ -34,14 +34,14 @@ class BookTable extends React.Component {
     return (
       <table id="booklist">
         <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Average Rating</th>
-        </tr>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Average Rating</th>
+          </tr>
         </thead>
         <tbody>
-        <BookRows books={this.props.books} />
+          <BookRows books={this.props.books} />
         </tbody>
       </table>
     )
@@ -56,23 +56,15 @@ export class SearchField extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props.handleSubmit(this.state.value);
+    this.props.onChange(event.target.value);
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
-        <label>
-          Enter text to search:
-          <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <label>
+        Enter text to search:
+          <input type="text" value={this.props.value} onChange={this.handleChange.bind(this)} />
+      </label>
     )
   }
 }
@@ -85,24 +77,16 @@ export class Pagination extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props.handleSubmit(this.state.value);
+    this.props.onChange(event.target.value);
   }
 
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
         <label>
           Pagination Parameters:
-          <input type="number" value={this.state.value} onChange={this.handleChange.bind(this)} />
+          <input type="number" value={this.props.value} onChange={this.handleChange.bind(this)} />
         </label>
-        <input type="submit" value="Submit" />
-      </form>
     )
   }
 }
@@ -115,28 +99,19 @@ export class SearchType extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    this.props.onChange(event.target.value);
   }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props.handleSubmit(this.state.value);
-  }
-
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
-      <label>
-        Choose a search type parameter:
-        <select value={this.state.value} onChange={this.handleChange.bind(this)}>
-          <option value="all">all</option>
-          <option value="author">author</option>
-          <option value="title">title</option>
-        </select>
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
+        <label>
+          Choose a search type parameter:
+        <select value={this.props.value} onChange={this.handleChange.bind(this)}>
+            <option value="all">all</option>
+            <option value="author">author</option>
+            <option value="title">title</option>
+          </select>
+        </label>
     )
   }
 }
@@ -149,54 +124,66 @@ class App extends React.Component {
     this.state = {
       books: [],
       query: {
-        text:'', 
+        text: 'ch',
         page: '',
         search: ''
       }
     };
   }
 
-  handleSubmitText(text) {
-    this.updateBooks({
-      ...this.state.query,
-      text
-    });
+  async handleSubmit(e) {
+    e.preventDefault();
+    this.search();
   }
 
-  handleSubmitPage(page) {
-    this.updateBooks({
-      ...this.state.query,
-      page
-    });
-  }
-
-  handleSubmitSearch(search) {
-    this.updateBooks({
-      ...this.state.query,
-      search
-    });
-  }
-
-  async updateBooks(query) {
-    const books = await getBooks(query);
+  async search() {
+    const books = await getBooks(this.state.query);
     this.setState({
-      books,
-      query
+      books
     });
   }
+
+  handleText(text) {
+    this.setState({
+      query: {
+        ...this.state.query,
+        text
+      }
+    });
+  }
+
+  handlePage(page) {
+    this.setState({
+      query: {
+        ...this.state.query,
+        page
+      }
+    });
+  }
+
+  handleSearch(search) {
+    this.setState({
+      query: {
+        ...this.state.query,
+        search
+      }
+    });
+  }
+
 
   async componentDidMount() {
-    this.updateBooks({
-      text: 'ch'
-    })
+    this.search()
   }
   render() {
-   // const query = { text: "ch" };
+    // const query = { text: "ch" };
     return (
       <div>
-        <SearchField handleSubmit={this.handleSubmitText.bind(this)}/>
-        <Pagination handleSubmit={this.handleSubmitPage.bind(this)}/>
-        <SearchType handleSubmit={this.handleSubmitSearch.bind(this)}/>
+        <form onSubmit={this.handleSubmit.bind(this)}>
+          <SearchField onChange={this.handleText.bind(this)} value={this.state.query.text}/>
+          <Pagination onChange={this.handlePage.bind(this)} value={this.state.query.page}/>
+          <SearchType onChange={this.handleSearch.bind(this)} value={this.state.query.search}/>
+          <input type="submit" value="submit"></input>
+        </form>
         <BookTable books={this.state.books} />
       </div>
     )
