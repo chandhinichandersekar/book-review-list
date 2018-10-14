@@ -32,25 +32,11 @@
 }
 
 
-#booklist {
-  border-collapse: collapse;
-  width: 90%;
 
-}
 
 #booklist tr:hover {
   background-color: #C7EAFB;
 }
 
-#booklist td, #booklist th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
 
-#booklist th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #056593;
-  color: white;
-}
+

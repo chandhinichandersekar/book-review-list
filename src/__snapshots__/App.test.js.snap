@@ -30,266 +30,306 @@ exports[`when App is rendered with shallow should match the snapshot 1`] = `
 
 exports[`when BookRows is rendered with shallow before component has mounted should match the snapshot 1`] = `
 Array [
-  <tr
-    key="ANIMAL FARM (AB)"
-  >
-    <td>
-      ANIMAL FARM (AB)
-    </td>
-    <td>
-      George Orwell
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Ardil-22 (Catch-22, # 1)"
-  >
-    <td>
-      Ardil-22 (Catch-22, # 1)
-    </td>
-    <td>
-      Joseph Heller
-    </td>
-    <td>
-      3.26
-    </td>
-  </tr>,
-  <tr
-    key="A Tale of Two Cities"
-  >
-    <td>
-      A Tale of Two Cities
-    </td>
-    <td>
-      Charles Dickens
-    </td>
-    <td>
-      4.16
-    </td>
-  </tr>,
-  <tr
-    key="Fields of Elysium (Fields of Elysium, #1)"
-  >
-    <td>
-      Fields of Elysium (Fields of Elysium, #1)
-    </td>
-    <td>
-      A.B. Whelan
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="14 Days to Die"
-  >
-    <td>
-      14 Days to Die
-    </td>
-    <td>
-      A.B. Whelan
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten"
-  >
-    <td>
-      Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten
-    </td>
-    <td>
-      Kazuo Ishiguro
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="A Leste do Éden (Vol I e II)"
-  >
-    <td>
-      A Leste do Éden (Vol I e II)
-    </td>
-    <td>
-      John Steinbeck
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Atlas wirft die Welt ab"
-  >
-    <td>
-      Atlas wirft die Welt ab
-    </td>
-    <td>
-      Ayn Rand
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="The Way West (The Big Sky, #2)"
-  >
-    <td>
-      The Way West (The Big Sky, #2)
-    </td>
-    <td>
-      A.B. Guthrie Jr.
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Hart van Inkt (Inkt, #1)"
-  >
-    <td>
-      Hart van Inkt (Inkt, #1)
-    </td>
-    <td>
-      Cornelia Funke
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="The Big Sky (The Big Sky, #1)"
-  >
-    <td>
-      The Big Sky (The Big Sky, #1)
-    </td>
-    <td>
-      A.B. Guthrie Jr.
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="As Sick as Our Secrets"
-  >
-    <td>
-      As Sick as Our Secrets
-    </td>
-    <td>
-      A.B. Whelan
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="AB de Villiers - The Autobiography"
-  >
-    <td>
-      AB de Villiers - The Autobiography
-    </td>
-    <td>
-      A.B. de Villiers
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Oliver Twist ( Ab 11 J.)."
-  >
-    <td>
-      Oliver Twist ( Ab 11 J.).
-    </td>
-    <td>
-      Charles Dickens
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Don Quixote [illustrated]"
-  >
-    <td>
-      Don Quixote [illustrated]
-    </td>
-    <td>
-      Miguel de Cervantes Saavedra
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="Insel der blauen Delfine. CD. ( Ab 8 J.)"
-  >
-    <td>
-      Insel der blauen Delfine. CD. ( Ab 8 J.)
-    </td>
-    <td>
-      Scott O'Dell
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="A Streetcar Named Desire. Ab 11. Schuljahr"
-  >
-    <td>
-      A Streetcar Named Desire. Ab 11. Schuljahr
-    </td>
-    <td>
-      Tennessee Williams
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="A mulher de Jerusalém"
-  >
-    <td>
-      A mulher de Jerusalém
-    </td>
-    <td>
-      A.B. Yehoshua
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="The Lover"
-  >
-    <td>
-      The Lover
-    </td>
-    <td>
-      A.B. Yehoshua
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
-  <tr
-    key="O misterioso caso de Styles"
-  >
-    <td>
-      O misterioso caso de Styles
-    </td>
-    <td>
-      Agatha Christie
-    </td>
-    <td>
-      4.26
-    </td>
-  </tr>,
+  <tbody>
+    <tr
+      key="ANIMAL FARM (AB)"
+    >
+      <TdWithStyles>
+        ANIMAL FARM (AB)
+      </TdWithStyles>
+      <TdWithStyles>
+        George Orwell
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Ardil-22 (Catch-22, # 1)"
+    >
+      <TdWithStyles>
+        Ardil-22 (Catch-22, # 1)
+      </TdWithStyles>
+      <TdWithStyles>
+        Joseph Heller
+      </TdWithStyles>
+      <TdWithStyles>
+        3.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="A Tale of Two Cities"
+    >
+      <TdWithStyles>
+        A Tale of Two Cities
+      </TdWithStyles>
+      <TdWithStyles>
+        Charles Dickens
+      </TdWithStyles>
+      <TdWithStyles>
+        4.16
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Fields of Elysium (Fields of Elysium, #1)"
+    >
+      <TdWithStyles>
+        Fields of Elysium (Fields of Elysium, #1)
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Whelan
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="14 Days to Die"
+    >
+      <TdWithStyles>
+        14 Days to Die
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Whelan
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten"
+    >
+      <TdWithStyles>
+        Cornelsen Senior English Library - Literatur: Ab 11. Schuljahr - Never let me go: Textband mit Annotationen und Zusatztexten
+      </TdWithStyles>
+      <TdWithStyles>
+        Kazuo Ishiguro
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="A Leste do Éden (Vol I e II)"
+    >
+      <TdWithStyles>
+        A Leste do Éden (Vol I e II)
+      </TdWithStyles>
+      <TdWithStyles>
+        John Steinbeck
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Atlas wirft die Welt ab"
+    >
+      <TdWithStyles>
+        Atlas wirft die Welt ab
+      </TdWithStyles>
+      <TdWithStyles>
+        Ayn Rand
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="The Way West (The Big Sky, #2)"
+    >
+      <TdWithStyles>
+        The Way West (The Big Sky, #2)
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Guthrie Jr.
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Hart van Inkt (Inkt, #1)"
+    >
+      <TdWithStyles>
+        Hart van Inkt (Inkt, #1)
+      </TdWithStyles>
+      <TdWithStyles>
+        Cornelia Funke
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="The Big Sky (The Big Sky, #1)"
+    >
+      <TdWithStyles>
+        The Big Sky (The Big Sky, #1)
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Guthrie Jr.
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="As Sick as Our Secrets"
+    >
+      <TdWithStyles>
+        As Sick as Our Secrets
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Whelan
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="AB de Villiers - The Autobiography"
+    >
+      <TdWithStyles>
+        AB de Villiers - The Autobiography
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. de Villiers
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Oliver Twist ( Ab 11 J.)."
+    >
+      <TdWithStyles>
+        Oliver Twist ( Ab 11 J.).
+      </TdWithStyles>
+      <TdWithStyles>
+        Charles Dickens
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Don Quixote [illustrated]"
+    >
+      <TdWithStyles>
+        Don Quixote [illustrated]
+      </TdWithStyles>
+      <TdWithStyles>
+        Miguel de Cervantes Saavedra
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="Insel der blauen Delfine. CD. ( Ab 8 J.)"
+    >
+      <TdWithStyles>
+        Insel der blauen Delfine. CD. ( Ab 8 J.)
+      </TdWithStyles>
+      <TdWithStyles>
+        Scott O'Dell
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="A Streetcar Named Desire. Ab 11. Schuljahr"
+    >
+      <TdWithStyles>
+        A Streetcar Named Desire. Ab 11. Schuljahr
+      </TdWithStyles>
+      <TdWithStyles>
+        Tennessee Williams
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="A mulher de Jerusalém"
+    >
+      <TdWithStyles>
+        A mulher de Jerusalém
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Yehoshua
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="The Lover"
+    >
+      <TdWithStyles>
+        The Lover
+      </TdWithStyles>
+      <TdWithStyles>
+        A.B. Yehoshua
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
+  <tbody>
+    <tr
+      key="O misterioso caso de Styles"
+    >
+      <TdWithStyles>
+        O misterioso caso de Styles
+      </TdWithStyles>
+      <TdWithStyles>
+        Agatha Christie
+      </TdWithStyles>
+      <TdWithStyles>
+        4.26
+      </TdWithStyles>
+    </tr>
+  </tbody>,
 ]
 `;
 

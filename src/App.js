@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 const superagent = require('superagent');
 
-
 async function getBooks(query) {
   return new Promise(resolve => {
     superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/').query({ ...query }).then(res => {
@@ -12,37 +11,64 @@ async function getBooks(query) {
 }
 
 export class BookRows extends React.Component {
-
   render() {
     const bookRows = this.props.books.map(book => {
       return (
+        <tbody>
         <tr key={book.title}>
-          <td>{book.title}</td>
-          <td>{book.author}</td>
-          <td>{book.average_rating}</td>
+        <TdWithStyles>{book.title}</TdWithStyles>
+        <TdWithStyles>{book.author}</TdWithStyles>
+        <TdWithStyles>{book.average_rating}</TdWithStyles>
         </tr>
+        </tbody>
       )
     })
     return bookRows;
   }
 }
 
+function TdWithStyles(props) {
+  const styles = {
+    "border": "1px solid #ddd",
+    "padding": "8px",
+  };
+  return (
+    <td style={styles}>{props.children}</td>  
+  );
+}
+
+function ThWithStyles(props) {
+  const styles = {
+    "border": "1px solid #ddd",
+    "padding": "8px",
+    "paddingTop": "12px",
+    "paddingBottom": "12px",
+    "textAlign": "center",
+    "backgroundColor": "#056593",
+    color: "white"
+  };
+  return (
+    <th style={styles}>{props.children}</th>  
+  );
+}
 
 class BookTable extends React.Component {
 
   render() {
+    const styles = {
+        "borderCollapse": "collapse",
+        width: "90%"
+    };
     return (
-      <table id="booklist">
+      <table id="booklist" style={styles}>
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Average Rating</th>
+            <ThWithStyles>Title</ThWithStyles>
+            <ThWithStyles>Author</ThWithStyles>
+            <ThWithStyles>Average Rating</ThWithStyles>
           </tr>
         </thead>
-        <tbody>
           <BookRows books={this.props.books} />
-        </tbody>
       </table>
     )
   }
