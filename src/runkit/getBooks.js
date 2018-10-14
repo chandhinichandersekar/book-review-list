@@ -17,7 +17,8 @@ async function endpointPromise(query) {
                     const books = result.GoodreadsResponse.search[0].results[0].work.map(work => {
                         return {
                             title: work.best_book[0].title[0],
-                            author: work.best_book[0].author[0].name[0]
+                            author: work.best_book[0].author[0].name[0],
+                            average_rating: work.average_rating[0]
                         }
                     });
                     resolve(JSON.stringify(books));
