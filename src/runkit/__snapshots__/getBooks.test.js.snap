@@ -4,83 +4,103 @@ exports[`when the getBooks endpoint is called with a valid request of no page sh
 Array [
   Object {
     "author": "J.R.R. Tolkien",
+    "average_rating": "4.26",
     "title": "Khobbit: Anglijskij yazyk s Dzhonom R.R. Tolkienom V 2 ch. Ch. 1 (Metod chteniya Il'i Franka)",
   },
   Object {
     "author": "Charlotte Brontë",
+    "average_rating": "4.11",
     "title": "Jane Eyre (Ch)",
   },
   Object {
     "author": "Antoine de Saint-Exupéry",
+    "average_rating": "4.29",
     "title": "Der Chly Prinz",
   },
   Object {
     "author": "Homer",
+    "average_rating": "3.74",
     "title": "The Odyssey",
   },
   Object {
     "author": "Dale Carnegie",
+    "average_rating": "4.16",
     "title": "How To Win Friends And Influence People (Kn.D / Cht.Na Angl.Yaz., Neadapt.) / Kak Zavoevat Druzey I Okazyvat Vliyanie Na Lyudey. How To Win Friends And Influence People. (Kd Ch, Angl.Yaz.,Neadaptir.)",
   },
   Object {
     "author": "William Shakespeare",
+    "average_rating": "3.89",
     "title": "Macbeth",
   },
   Object {
     "author": "Herman Melville",
+    "average_rating": "3.48",
     "title": "MOBY DICK, or the White Whale [Special Illustrated Edition] [Annotated with Criticisms and Interpretations ] [Free Audio Links]",
   },
   Object {
     "author": "Jane Austen",
+    "average_rating": "4.13",
     "title": "Persuasion (Ch)",
   },
   Object {
     "author": "Mark Manson",
+    "average_rating": "4.02",
     "title": "Nghệ thuật tinh tế của việc đ*ch thèm quan tâm",
   },
   Object {
     "author": "C.H. Dalton",
+    "average_rating": "3.69",
     "title": "A Practical Guide to Racism",
   },
   Object {
     "author": "Oscar Wilde",
+    "average_rating": "4.17",
     "title": "De ernst van Ernst : een triviaal blijspel voor ernstige menschen",
   },
   Object {
+    "author": "Harriet Beecher Stowe",
+    "average_rating": "3.85",
+    "title": "Onkel Toms Hütte",
+  },
+  Object {
     "author": "Dante Alighieri",
+    "average_rating": "4.07",
     "title": "The Divine Comedy",
   },
   Object {
     "author": "Lao Tzu",
+    "average_rating": "4.31",
     "title": "Tao Teh Ching",
   },
   Object {
     "author": "Sophocles",
+    "average_rating": "3.69",
     "title": "Œdipe-Roi",
   },
   Object {
     "author": "Virgil",
+    "average_rating": "3.82",
     "title": "The Aeneid",
   },
   Object {
     "author": "John Bunyan",
+    "average_rating": "3.99",
     "title": "Bunyan's Pilgrim's Progress. Illustr. by C.H. Bennett",
   },
   Object {
     "author": "Harrison Davies",
+    "average_rating": "3.67",
     "title": "S.E.A.R.Ch",
   },
   Object {
     "author": "C.H. Armstrong",
+    "average_rating": "4.31",
     "title": "The Edge of Nowhere",
   },
   Object {
     "author": "Johann David Wyss",
+    "average_rating": "3.92",
     "title": "Le Robinson Suisse",
-  },
-  Object {
-    "author": "C.H. Admirand",
-    "title": "Tyler (The Secret Life of Cowboys, #1)",
   },
 ]
 `;
@@ -89,83 +109,103 @@ exports[`when the getBooks endpoint is called with a valid request of page 2 sho
 Array [
   Object {
     "author": "C.H. Admirand",
+    "average_rating": "3.58",
+    "title": "Tyler (The Secret Life of Cowboys, #1)",
+  },
+  Object {
+    "author": "C.H. Admirand",
+    "average_rating": "3.55",
     "title": "A Wedding in Apple Grove (Small Town USA, #1)",
   },
   Object {
     "author": "Fyodor Dostoyevsky",
+    "average_rating": "4.17",
     "title": "L'Esprit Souterrain",
   },
   Object {
     "author": "C.H. MacLean",
+    "average_rating": "3.67",
     "title": "One is Come (Five in Circle, #1)",
   },
   Object {
     "author": "Thomas Hardy",
+    "average_rating": "3.81",
     "title": "Jude the Obscure",
   },
   Object {
     "author": "Anne Brontë",
+    "average_rating": "3.67",
     "title": "Agnès Grey (Annoté)",
   },
   Object {
     "author": "C.H. Lawler",
+    "average_rating": "4.26",
     "title": "The Saints of Lost Things",
   },
   Object {
     "author": "Charles Baudelaire",
+    "average_rating": "4.26",
     "title": "Les fleurs du mal. Avec une étude sur la vie et les oeuvres de Baudelaire par Camille Vergniol. Illus. de Tony George-Roux, gravées par Ch. Clément ",
   },
   Object {
     "author": "C.H. Charles",
+    "average_rating": "3.81",
     "title": "Love Letters of Great Men and Women: From the Eighteenth Century to the Present Day",
   },
   Object {
     "author": "Charlotte Brontë",
+    "average_rating": "3.74",
     "title": "Shirley",
   },
   Object {
     "author": "C.H. Admirand",
+    "average_rating": "3.64",
     "title": "One Day in Apple Grove (Small Town USA, #2)",
   },
   Object {
     "author": "Unknown",
+    "average_rating": "3.69",
     "title": "Sir Gawain and the Green Knight",
   },
   Object {
     "author": "Johann Wolfgang von Goethe",
+    "average_rating": "3.97",
     "title": "Faust, a Tragedy, Tr. by Capt. [c.H.] Knox",
   },
   Object {
     "author": "Rudyard Kipling",
+    "average_rating": "3.72",
     "title": "Kim",
   },
   Object {
     "author": "Henry Fielding",
+    "average_rating": "3.73",
     "title": "The History of Tom Jones, a Foundling",
   },
   Object {
     "author": "C.H. Admirand",
+    "average_rating": "3.89",
     "title": "Jesse  (The Secret Life of Cowboys, #3)",
   },
   Object {
     "author": "Aeschylus",
+    "average_rating": "4.00",
     "title": "Oresteia: Me To Archaio Keimeno",
   },
   Object {
     "author": "C.H. Admirand",
+    "average_rating": "3.85",
     "title": "Dylan  (The Secret Life of Cowboys, #2)",
   },
   Object {
     "author": "Swaroop C.H.",
+    "average_rating": "4.04",
     "title": "A Byte of Python",
   },
   Object {
     "author": "Lin C.H.",
+    "average_rating": "3.93",
     "title": "Stories from the Air",
-  },
-  Object {
-    "author": "C.H. Admirand",
-    "title": "Welcome Back to Apple Grove (Small Town USA #3)",
   },
 ]
 `;
