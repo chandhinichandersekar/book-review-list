@@ -18,7 +18,7 @@ Super agent is used to initiate the request by invoking the GET method on the Go
 As the GoodReadBooks API returned XML, this XML was converted into JSON for the app to use it. 
 
 
-Front End:
+Front End: <br>
 React JS was used for the front end development of this application. The App class contains the state which has the state of the books and the query(with its parameters- text, page and search type). Initially books is an empty array and the query with default parameters as text:'ch', page:'',search:''. <br>
 
 Super agent is used to initiate the request by invoking the GET method on the RunKit(express app) endpoint, then calling .then() to send the request. This done by means of using Promise and then resolving it with response of the body.
