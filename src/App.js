@@ -18,8 +18,8 @@ export class BookRows extends React.Component {
   render() {
     const bookRows = this.props.books.map(book => {
       return (
-        <tbody>
-          <tr key={book.title}>
+        <tbody key={book.title}>
+          <tr>
             <TdWithStyles>{book.title}</TdWithStyles>
             <TdWithStyles>{book.author}</TdWithStyles>
             <TdWithStyles>{book.average_rating}</TdWithStyles>
