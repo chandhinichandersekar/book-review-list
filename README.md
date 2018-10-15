@@ -2,7 +2,7 @@
 
 App Description:
 
-This application is used to give a list of books, its authors and the average ratings according to the search terms and pagination parameters given as input by the user. The book data is retrived from the Goodreads public API<br>
+This application is used to give a list of books, its authors and the average ratings according to the search terms and pagination parameters given as input by the user. The book data is retrieved from the Goodreads public API<br>
 
 User Interaction: <br>
 There are two input boxes,
@@ -10,29 +10,29 @@ There are two input boxes,
 - An input box to enter a pagination parameter <br>
 There is a drop down list to select the search parameter type - author, title or all. The default search parameter is 'ch' with page parameter as '1' and serach type as 'all'.
 
-Once the user gives the search and pagination parameters, the results retrieved from the Goodreads public API and are displayed in the form of a table containing the book title, author and the average rating.
+Once the user gives the search and pagination parameters, the results retrieved from the Goodreads public API are displayed in the form of a table containing the title, author and the average rating.
 
 Back End:
-Super agent is used to initiate the request by invoking the GET method on the GoodReadBooks public API, then calling .then() to send the request. This done by means of using Promise and resolving it by retrieving the necessary data from the API.As the GoodReadBooks API returned XML, this XML was converted into JSON for the app to use it.
+Superagent is used to send the request by invoking the GET method on the GoodReadBooks public API.  This is done by means of using async/await and resolving it by retrieving the necessary data from the API. As the GoodReadBooks API returns XML, the XML is converted into JSON for the app to use.
 
-The endpoint function gets the user input data and parses the query which is then sent to the endpointPromise function to retrieve the data from the API after which the promise is resolved. 
-
+The endpoint function gets the user input data from parsing the query which is then sent to the getBooks function to retrieve the data from the GoodReadBooks API.
 
 Front End: <br>
-React JS was used for the front end development of this application. The App class contains the state which has the state of the books and the query(with its parameters- text, page and search type). Initially books is an empty array and the query with default parameters as text:'ch', page:'',search:''. <br>
+React JS was used for the front end development of this application. The App class contains the state which has the state of the books and the query(with its parameters- text, page and search type). Initially books is an empty array and the query with default parameters as text:'ch', page:'',search:''. The default search parameter is 'ch' so that some data is already there in the table.<br>
 
-Super agent is used to initiate the request by invoking the GET method on the RunKit(express app) endpoint, then calling .then() to send the request. This done by means of using Promise and then resolving it with response of the body.
-The ComponentDidMount function calls the search function, which in turn calls the getBooks (which gets the query response). The search function then sets the state of the books.
+Superagent is used to send the request by invoking the GET method on the runkit endpoint. This is done by means of using async/await and resolving it by retrieving the necessary data. 
+
+The ComponentDidMount, which runs when the component has mounted, fetches the books to load into the table. 
 
 There are four main components rendered in the App class
 - SearchField <br>
-  This component is used to render an input box for the user to enter the search terms. The value for this feild is passed onto props from the App class' state. onChange calls handleText function which updates the query with the text that the user entered. 
+  This component is used to render an input box for the user to enter the search terms. The value for this field is passed onto props from the App class' state. onChange calls handleText function  (passed in from the App component) which updates the query with the text that the user entered. 
 - Pagination <br>
-   This component is used to render an input box for the user to enter the pagination terms. The value for this feild is passed onto props from the App class' state. onChange calls handlePage function which updates the query with the pagination parameter that the user entered. 
+   This component is used to render an input box for the user to enter the pagination terms. The value for this field is passed onto props from the App class' state. onChange calls handlePage function (passed in from the App component) which updates the query with the pagination parameter that the user entered. 
 - SearchType <br>
-   This component is used to render a drop down list for the user to select the search type. The value for this feild is passed onto props from the App class' state. onChange calls handleSearch function which updates the query with the search type that the user selects. 
+   This component is used to render a drop down list for the user to select the search type. The value for this field is passed onto props from the App class' state. onChange calls handleSearch function (passed in from the App component) which updates the query with the search type that the user selects. 
 - BookTable <br>
-  This component is used to render the book review result table. This component takes in books parameter that returns all the books retrieved as per the query and is on the state. This books is then passed onto the BookRows component through props, which is used to render the rows of books retrieved.
+  This component is used to render the book review result table. This component takes in a books parameter. 
 
 API Used:
 
@@ -47,11 +47,10 @@ search[field]: Field to search, one of 'title', 'author', or 'all' (default is '
 
 ## Other Important Notes:
 - CORS headers were enabled to access data.
--  Goodreads search API returned XML. This XML was converted into JSON for the app to use it.
-- RESTful practices were used to form different queries
-- Test driven development was followed and achieved a test coverage of about 95%
-
-Update .env.sample file to .env
+- Goodreads search API returned XML. This XML was converted into JSON for the app to use it.
+- RESTful practices were used to form different queries and also on the express endpoint
+- Test driven development was followed and achieved a test coverage of about 95% (Run the tests using npm test-coverage to see the coverage).
+- The developer key is on an envirinment variable named GOODREADS_KEY. Runkit is set up with this environment variable. In the repo it is set up as a .env file but is ignored by git. A developer can use the .env.sample to create the .env file.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

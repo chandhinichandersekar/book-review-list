@@ -3,7 +3,7 @@ const parseQuery = require('url').parse;
 const XMLparser = require('xml2js').parseString;
 const key = process.env.GOODREADS_KEY;
 
-async function endpointPromise(query) {
+async function getBooks(query) {
     return new Promise(async (resolve) => {
         const { text, page, search } = query;
         const pageOrDefault = page ? page : '1';
@@ -30,18 +30,18 @@ async function endpointPromise(query) {
     })
 }
 
-exports.endpointPromise = endpointPromise;
+exports.getBooks = getBooks;
 
 
 async function endpoint(request, response) {
     const parsedUrl = parseQuery(request.url, true);
-    const responseFromPromise = await endpointPromise(parsedUrl.query);
+    const books = await getBooks(parsedUrl.query);
     response.writeHead(200, {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': '*',
     });
-    response.end(responseFromPromise)
+    response.end(books)
 }
 
 exports.endpoint = endpoint;

@@ -3,10 +3,14 @@ import './App.css';
 const superagent = require('superagent');
 
 async function getBooks(query) {
-  return new Promise(resolve => {
-    superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/bookReviews').query({ ...query }).then(res => {
-      resolve(res.body);
-    })
+  return new Promise(async resolve => {
+    const request = superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/bookReviews').query({ ...query });
+    try {
+      const response = await request;
+      resolve(response.body);
+    } catch (e) {
+
+    }
   });
 }
 
