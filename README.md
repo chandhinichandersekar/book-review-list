@@ -49,8 +49,9 @@ search[field]: Field to search, one of 'title', 'author', or 'all' (default is '
 - CORS headers were enabled to access data.
 - Goodreads search API returned XML. This XML was converted into JSON for the app to use it.
 - RESTful practices were used to form different queries and also on the express endpoint
-- Test driven development was followed and achieved a test coverage of about 95% (Run the tests using npm test-coverage to see the coverage).
+- Test driven development was followed and achieved a test coverage of about 95% (Run the tests using npm test-coverage to see the coverage). I only implemented the happy paths(future improvements would be handling error scenarios); I wanted to make sure I had the app working to send it to you as soon as possible.
 - The developer key is on an envirinment variable named GOODREADS_KEY. Runkit is set up with this environment variable. In the repo it is set up as a .env file but is ignored by git. A developer can use the .env.sample to create the .env file.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
