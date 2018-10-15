@@ -33,9 +33,8 @@ async function endpointPromise(query) {
 exports.endpointPromise = endpointPromise;
 
 
-exports.endpoint = async function(request, response) {
+async function endpoint(request, response) {
     const parsedUrl = parseQuery(request.url, true);
-    console.log("query", parsedUrl.query);
     const responseFromPromise = await endpointPromise(parsedUrl.query);
     response.writeHead(200, {
         'Content-Type': 'application/json',
@@ -44,3 +43,5 @@ exports.endpoint = async function(request, response) {
     });
     response.end(responseFromPromise)
 }
+
+exports.endpoint = endpoint;

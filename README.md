@@ -13,9 +13,9 @@ There is a drop down list to select the search parameter type - author, title or
 Once the user gives the search and pagination parameters, the results retrieved from the Goodreads public API and are displayed in the form of a table containing the book title, author and the average rating.
 
 Back End:
-Super agent is used to initiate the request by invoking the GET method on the GoodReadBooks public API, then calling .then() to send the request. This done by means of using Promise and resolving it by retrieving the necessary data from the API.
+Super agent is used to initiate the request by invoking the GET method on the GoodReadBooks public API, then calling .then() to send the request. This done by means of using Promise and resolving it by retrieving the necessary data from the API.As the GoodReadBooks API returned XML, this XML was converted into JSON for the app to use it.
 
-As the GoodReadBooks API returned XML, this XML was converted into JSON for the app to use it. 
+The endpoint function gets the user input data and parses the query which is then sent to the endpointPromise function to retrieve the data from the API after which the promise is resolved. 
 
 
 Front End: <br>

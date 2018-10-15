@@ -1,5 +1,4 @@
 const endpoint = require('./getBooks').endpoint;
-const responseFromGoodreads = require('./responseFromGoodreads.json');
 
 describe('when the getBooks endpoint is called', () => {
     describe('with a valid request of no page', () => {
