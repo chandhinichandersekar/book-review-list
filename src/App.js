@@ -19,11 +19,11 @@ export class BookRows extends React.Component {
     const bookRows = this.props.books.map(book => {
       return (
         <tbody>
-        <tr key={book.title}>
-        <TdWithStyles>{book.title}</TdWithStyles>
-        <TdWithStyles>{book.author}</TdWithStyles>
-        <TdWithStyles>{book.average_rating}</TdWithStyles>
-        </tr>
+          <tr key={book.title}>
+            <TdWithStyles>{book.title}</TdWithStyles>
+            <TdWithStyles>{book.author}</TdWithStyles>
+            <TdWithStyles>{book.average_rating}</TdWithStyles>
+          </tr>
         </tbody>
       )
     })
@@ -37,7 +37,7 @@ function TdWithStyles(props) {
     "padding": "8px",
   };
   return (
-    <td style={styles}>{props.children}</td>  
+    <td style={styles}>{props.children}</td>
   );
 }
 
@@ -52,7 +52,7 @@ function ThWithStyles(props) {
     color: "white"
   };
   return (
-    <th style={styles}>{props.children}</th>  
+    <th style={styles}>{props.children}</th>
   );
 }
 
@@ -60,8 +60,8 @@ class BookTable extends React.Component {
 
   render() {
     const styles = {
-        "borderCollapse": "collapse",
-        width: "90%"
+      "borderCollapse": "collapse",
+      width: "90%"
     };
     return (
       <table id="booklist" style={styles}>
@@ -72,7 +72,7 @@ class BookTable extends React.Component {
             <ThWithStyles>Average Rating</ThWithStyles>
           </tr>
         </thead>
-          <BookRows books={this.props.books} />
+        <BookRows books={this.props.books} />
       </table>
     )
   }
@@ -113,10 +113,10 @@ export class Pagination extends React.Component {
 
   render() {
     return (
-        <label>
-          Pagination Parameters:
+      <label>
+        Pagination Parameters:
           <input type="number" value={this.props.value} onChange={this.handleChange.bind(this)} />
-        </label>
+      </label>
     )
   }
 }
@@ -134,14 +134,14 @@ export class SearchType extends React.Component {
 
   render() {
     return (
-        <label>
-          Choose a search type parameter:
+      <label>
+        Choose a search type parameter:
         <select value={this.props.value} onChange={this.handleChange.bind(this)}>
-            <option value="all">all</option>
-            <option value="author">author</option>
-            <option value="title">title</option>
-          </select>
-        </label>
+          <option value="all">all</option>
+          <option value="author">author</option>
+          <option value="title">title</option>
+        </select>
+      </label>
     )
   }
 }
@@ -209,9 +209,9 @@ class App extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit.bind(this)}>
-          <SearchField onChange={this.handleText.bind(this)} value={this.state.query.text}/>
-          <Pagination onChange={this.handlePage.bind(this)} value={this.state.query.page}/>
-          <SearchType onChange={this.handleSearch.bind(this)} value={this.state.query.search}/>
+          <SearchField onChange={this.handleText.bind(this)} value={this.state.query.text} />
+          <Pagination onChange={this.handlePage.bind(this)} value={this.state.query.page} />
+          <SearchType onChange={this.handleSearch.bind(this)} value={this.state.query.search} />
           <input type="submit" value="submit"></input>
         </form>
         <BookTable books={this.state.books} />
