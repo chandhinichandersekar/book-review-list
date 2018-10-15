@@ -1,32 +1,32 @@
 const superagent = require('superagent');
 const parseQuery = require('url').parse;
 const XMLparser = require('xml2js').parseString;
-const key = process.env.GOODREADS_KEY; 
+const key = process.env.GOODREADS_KEY;
 
 async function endpointPromise(query) {
-    return new Promise(resolve => {
-        const {text, page, search} = query;
+    return new Promise(async (resolve) => {
+        const { text, page, search } = query;
         const pageOrDefault = page ? page : '1';
         const superagentRequest = superagent.get('https://www.goodreads.com/search/index.xml');
         superagentRequest.buffer();
         superagentRequest.type('xml');
-        superagentRequest.query({ key, q: text, search, page: pageOrDefault })
-        .then(res => {
-                XMLparser(res.text, function (err, result) {
-                    // const firstTile = result.GoodreadsResponse.search[0].results[0].work[0].best_book[0].title[0];
-                    const books = result.GoodreadsResponse.search[0].results[0].work.map(work => {
-                        return {
-                            title: work.best_book[0].title[0],
-                            author: work.best_book[0].author[0].name[0],
-                            average_rating: work.average_rating[0]
-                        }
-                    });
-                    resolve(JSON.stringify(books));
+        superagentRequest.query({ key, q: text, search, page: pageOrDefault });
+        try {
+            const res = await superagentRequest;
+            XMLparser(res.text, function (err, result) {
+                // const firstTile = result.GoodreadsResponse.search[0].results[0].work[0].best_book[0].title[0];
+                const books = result.GoodreadsResponse.search[0].results[0].work.map(work => {
+                    return {
+                        title: work.best_book[0].title[0],
+                        author: work.best_book[0].author[0].name[0],
+                        average_rating: work.average_rating[0]
+                    }
                 });
-            })   
-            .catch(err => {
-                resolve('error');
-        });
+                resolve(JSON.stringify(books));
+            });
+        } catch (e) {
+            resolve('error'); // failed superagentRequest
+        }
     })
 }
 

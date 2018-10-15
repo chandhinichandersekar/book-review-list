@@ -4,7 +4,7 @@ const superagent = require('superagent');
 
 async function getBooks(query) {
   return new Promise(resolve => {
-    superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/').query({ ...query }).then(res => {
+    superagent.get('https://find-books-by-title-author-or-isbn-ztnewtvsrs9y.runkit.sh/bookReviews').query({ ...query }).then(res => {
       resolve(res.body);
     })
   });
