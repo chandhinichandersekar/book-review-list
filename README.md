@@ -1,4 +1,56 @@
-Book - review - app
+## BOOK - REVIEW - APPLICATION <br>
+
+App Description:
+
+This application is used to give a list of books, its authors and the average ratings according to the search terms and pagination parameters given as input by the user. The book data is retrived from the Goodreads public API<br>
+
+User Interaction: <br>
+There are two input boxes,
+- An input box to enter a search parameter
+- An input box to enter a pagination parameter <br>
+There is a drop down list to select the search parameter type - author, title or all. The default search parameter is 'ch' with page parameter as '1' and serach type as 'all'.
+
+Once the user gives the search and pagination parameters, the results retrieved from the Goodreads public API and are displayed in the form of a table containing the book title, author and the average rating.
+
+Back End:
+Super agent is used to initiate the request by invoking the GET method on the GoodReadBooks public API, then calling .then() to send the request. This done by means of using Promise and resolving it by retrieving the necessary data from the API.
+
+As the GoodReadBooks API returned XML, this XML was converted into JSON for the app to use it. 
+
+
+Front End:
+React JS was used for the front end development of this application. The App class contains the state which has the state of the books and the query(with its parameters- text, page and search type). Initially books is an empty array and the query with default parameters as text:'ch', page:'',search:''. <br>
+
+Super agent is used to initiate the request by invoking the GET method on the RunKit(express app) endpoint, then calling .then() to send the request. This done by means of using Promise and then resolving it with response of the body.
+The ComponentDidMount function calls the search function, which in turn calls the getBooks (which gets the query response). The search function then sets the state of the books.
+
+There are four main components rendered in the App class
+- SearchField <br>
+  This component is used to render an input box for the user to enter the search terms. The value for this feild is passed onto props from the App class' state. onChange calls handleText function which updates the query with the text that the user entered. 
+- Pagination <br>
+   This component is used to render an input box for the user to enter the pagination terms. The value for this feild is passed onto props from the App class' state. onChange calls handlePage function which updates the query with the pagination parameter that the user entered. 
+- SearchType <br>
+   This component is used to render a drop down list for the user to select the search type. The value for this feild is passed onto props from the App class' state. onChange calls handleSearch function which updates the query with the search type that the user selects. 
+- BookTable <br>
+  This component is used to render the book review result table. This component takes in books parameter that returns all the books retrieved as per the query and is on the state. This books is then passed onto the BookRows component through props, which is used to render the rows of books retrieved.
+
+API Used:
+
+The Goodreads public API was used to retrieve the books. Below is the endpoint that was hit to retrieve the desired data. <br>
+URL: https://www.goodreads.com/search/index.xml <br> 
+HTTP method: GET <br>
+Parameters: <br>
+q: The query text to match against book title, author, and ISBN fields. Supports boolean operators and phrase searching. <br>
+page: Which page to return (default 1, optional) <br>
+key: Developer key (required). <br>
+search[field]: Field to search, one of 'title', 'author', or 'all' (default is 'all')
+
+## Other Important Notes:
+- CORS headers were enabled to access data.
+-  Goodreads search API returned XML. This XML was converted into JSON for the app to use it.
+- RESTful practices were used to form different queries
+- Test driven development was followed and achieved a test coverage of about 95%
+
 Update .env.sample file to .env
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
